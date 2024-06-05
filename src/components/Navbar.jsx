@@ -8,14 +8,39 @@ const Navbar = () => {
         <img src={appleImg} alt="Apple" width={18} height={18} />
 
         <div className="flex flex-1 justify-center max-sm:hidden">
-          {navLists.map((nav) => (
+          {/* {navLists.map((nav) => (
             <div
               key={nav}
               className="px-5 text-sm cursor-pointer text-gray hover:text-white transition-all"
             >
-              {nav}
+              <a href="https://www.apple.com/store">{nav}</a>
             </div>
-          ))}
+          ))} */}
+
+          <a
+            className="px-5 text-sm cursor-pointer text-gray hover:text-white transition-all"
+            href="https://www.apple.com/store"
+          >
+            {navLists[0]}
+          </a>
+          <a
+            className="px-5 text-sm cursor-pointer text-gray hover:text-white transition-all"
+            href="https://www.apple.com/mac/"
+          >
+            {navLists[1]}
+          </a>
+          <a
+            className="px-5 text-sm cursor-pointer text-gray hover:text-white transition-all"
+            href="https://www.apple.com/shop/buy-iphone"
+          >
+            {navLists[2]}
+          </a>
+          <a
+            className="px-5 text-sm cursor-pointer text-gray hover:text-white transition-all"
+            href="https://support.apple.com/"
+          >
+            {navLists[3]}
+          </a>
         </div>
 
         <div className="flex items-baseline gap-7 max-sm:justify-end max-sm:flex-1">
